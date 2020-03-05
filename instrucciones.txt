@@ -1,0 +1,14 @@
+Deben leer los archivos involucrados en la solución:
+1.app.js
+2.routes/jobs.js
+3./views/jobs.ejs
+3.public/actions/jobs.js
+
+buscar las instrucciones escritas en comentarios para cumplir con los objetivos
+
+esta solución usa semantic ui como manejador de interfaces (es como bootstrap), si quieren continuar 
+usandolo deben leer la documentación https://semantic-ui.com/elements/button.html
+
+deben instalar las dependencias del proyecto usando npm install (para generar y llenar la carpeta node_modules)
+
+cualquier otra cosa pregunten

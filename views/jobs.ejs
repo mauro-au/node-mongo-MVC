@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" type="text/css" href="/dist/semantic.min.css">
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"></script>
+    <script src="/dist/semantic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"></script>
+  </head>
+  <body>
+    <div class="ui centered grid">
+      <div class="ui two column centered row">
+        <div class="centered column">
+          <h1><%= title %></h1>
+          <p>Selecciona parametros de búsqueda </p>
+        </div>
+        <div class="centered column">
+            <form class="ui form" id="jobs">
+                <div class="field">
+                    <label>País</label>
+                    <select class="ui search dropdown" id="job-country">
+                        <option value="">Selecciona País</option>
+                        <option value="CA">Canada</option>            
+                        <option value="US">United States</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label>Afinidad</label>
+                    <select class="ui search dropdown" id="job-desc">
+                        <option value="">Selecciona una opción</option>
+                        <option value="developer">Developer</option>            
+                        <option value="ti">TI</option>
+                        <option value="ux">UX</option>
+                        <option value="python">Python</option>
+                        <option value="javascript">Javascript</option>
+                        <option value="php">php</option>
+                    </select>
+                </div>
+                <button class="ui primary button" type="submit">
+                    Save
+                </button>
+            </form>
+        </div>
+      </div>
+    </div>
+    <div id="list-jobs">
+      <!-- Acá debe ir su interfaz para mostrar los empleos obtenidos -->
+    </div>
+    <script type="module" src="/actions/jobs.js"></script>
+  </body>
+</html>
